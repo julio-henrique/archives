@@ -38,3 +38,9 @@ loop de acrescenta à numeroFa
     total = total * acrescenta
     acrescenta + 1
 print total
+
+
+### Criar algoritmos
+Quando for preciso fazer uma operação em algo especifico de um programa, é melhor adicionar a parte especifica à uma variavel e depois fazer a operação necessária
+
+Ex: Adicionar uma propriedade específica de um array/objeto à uma variável para fazer uma operação seja no valor ou na key (chave)
