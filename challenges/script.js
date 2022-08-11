@@ -1,4 +1,4 @@
-const result = document.getElementById('result')
+const total = document.getElementById('result')
 
 
 
@@ -39,3 +39,27 @@ runningSum([1, 1, 1, 1, 1])
  * str = 'ana'
  * retorna 1
 */
+const firstUniqueChar = (str) => {
+    let result = {}
+
+    for (let i = 0; i < str.length; i++) {
+        if (!result[str[i]]) {
+            result[str[i]] = 1
+        } else {
+            result[str[i]]++
+        }
+    }
+
+    for (key of Object.keys(result)) {
+        if (result[key] === 1) {
+            return str.indexOf(key)
+        }
+    }
+
+    return -1
+}
+const a = firstUniqueChar('ppp')
+const b = firstUniqueChar('aaannssooeekkm')
+console.log(a)
+console.log(b)
+// ============================================================
